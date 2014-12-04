@@ -14,7 +14,7 @@ sudo wget -q http://rpm.flowworld.com/flowsdk.repo -O /etc/yum.repos.d/flowsdk.r
 echo '##################################'
 echo '### Installing required tools ####'
 echo '##################################'
-sudo yum install httpd gcc libflowcoredocs libflowcorehgowtos libflowcore-devel libflowmessaging-devel libflowmessagingdocs libflowcorehowtos libflowmessaginghowtos libflowcore-python libflowmessaging-python -y --nogpgcheck
+sudo yum install httpd gcc libflowcoredocs libflowcorehowtos libflowcore-devel libflowmessaging-devel libflowmessagingdocs libflowcorehowtos libflowmessaginghowtos libflowcore-python libflowmessaging-python libflowcorepythondocs libflowmessagingpythondocs -y --nogpgcheck
 (sudo cat - > /etc/httpd/conf.d/flowsdk.conf) << END
 Alias /flowsdk /opt/flowsdk/docs
 <Directory "/opt/flowsdk/docs">
