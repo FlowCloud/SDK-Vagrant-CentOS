@@ -61,6 +61,9 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config| 
  config.vm.box = "chef/centos-7.0"
+ config.vm.provider "virtualbox" do |v|
+  v.gui = false # use true to debug
+ end
  config.vm.hostname = "FlowCloud"
  config.vm.provision "shell", inline: $script
  config.vm.network "forwarded_port", guest: 80, host: 8080
