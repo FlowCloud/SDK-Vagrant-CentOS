@@ -9,7 +9,7 @@ sudo yum update -y
 echo '##################################'
 echo '### Installing required Repos ####'
 echo '##################################'
-sudo rpm --quiet --nosignature -U http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-2.noarch.rpm
+sudo rpm --quiet --nosignature -U http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
 sudo wget -q http://rpm.flowworld.com/flowsdk.repo -O /etc/yum.repos.d/flowsdk.repo
 echo '##################################'
 echo '### Installing required tools ####'
